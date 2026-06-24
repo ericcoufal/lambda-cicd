@@ -18,7 +18,7 @@ Resources:
       Tags:
         - Key: Environment
           Value: !Ref Environment
-          - Key: Environmnet
+          - Key: Environment
             Value: GithubActionsTesting
 
 Outputs:
