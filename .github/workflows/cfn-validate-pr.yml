@@ -44,7 +44,7 @@ jobs:
                 repo: context.repo.repo,
                 body: 'CloudFormation test stack deployed. Stack name: pr-test-stack-${{ github.event.pull_request.number }}'
               })
-    cleanup-on-merge: # name of our job
+    cleanup-on-merge: # name of our cleanup job
       runs-on: ubuntu-latest
       if: github.event.pull_request.merged == true
       steps: 
